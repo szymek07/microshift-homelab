@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 1-clusters/microshift.home.swinney.io
+    path: 1-clusters/microshift.local
     repoURL: https://github.com/szymek07/microshift-homelab.git
     targetRevision: master
   syncPolicy:
