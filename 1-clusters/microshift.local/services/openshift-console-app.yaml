@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: plex
+  name: openshift-console
   namespace: argocd
 spec:
   destination:
-    namespace: media
+    namespace: kube-system
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: 3-apps/plex
-    repoURL: https://github.com/benswinney/microshift-homelab.git
+    path: 2-services/openshift-console
+    repoURL: https://github.com/szymek07/microshift-homelab.git
     targetRevision: master
   syncPolicy:
     automated:
